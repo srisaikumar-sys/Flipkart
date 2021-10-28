@@ -47,8 +47,13 @@ public class BrokenImage {
 		}
 		System.out.println("Successcount===>"+count);
 		System.out.println("unsuccesscount===>"+brokencount);		
+		
+		WebElement txtName = driver.findElement(By.xpath("//a[@class='_14Me7y']"));
+		String s=txtName.getText();
+		System.out.println(s);
+		
+		
+		
 		}
-	
-
 }
 
