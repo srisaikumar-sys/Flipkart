@@ -56,6 +56,9 @@ public class BrokenImage {
 		String s=txtName.getText();
 		System.out.println(s);
 		
+		System.out.println("Successcount===>"+count);
+		System.out.println("unsuccesscount===>"+brokencount);		
+		
 		
 		
 		}
