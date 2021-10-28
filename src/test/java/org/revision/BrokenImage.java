@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrokenImage {
 	
-	public static void main(String[] args) throws IOException  {
+	public static void main(String[] args) throws IOException, InterruptedException  {
 		
 		System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Sri Sai kumar\\eclipse-workspace\\Revision_Project\\drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -46,7 +46,11 @@ public class BrokenImage {
 				}}}
 		}
 		System.out.println("Successcount===>"+count);
-		System.out.println("unsuccesscount===>"+brokencount);		
+		System.out.println("unsuccesscount===>"+brokencount);	
+		
+		Thread.sleep(300);
+		System.out.println("Printed SuccessCount");
+		System.out.println("Printed Unsuccesscount");
 		
 		WebElement txtName = driver.findElement(By.xpath("//a[@class='_14Me7y']"));
 		String s=txtName.getText();
